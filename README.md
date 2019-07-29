@@ -1,5 +1,5 @@
 # Padrões de Projetos Repo
 
-![./img_patterns.png](Design Patterns)
+![Design Patterns](/img_patterns.png)
 
 Este repositório contém exemplos de Padrões de Projeto em Java.
