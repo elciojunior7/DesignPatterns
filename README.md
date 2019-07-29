@@ -1,4 +1,4 @@
-# Padrões de Projetos Repo
+# Repositório de Padrões de Projetos 
 
 ![Design Patterns](/img_patterns.png)
 
