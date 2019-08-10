@@ -1,7 +1,7 @@
 
 public class PdfPrototype extends DocumentoPrototype {
 	protected PdfPrototype(PdfPrototype pdfPrototype) {
-        //this.tamanho = pdfPrototype.getTamanho();
+        this.tamanho = pdfPrototype.getTamanho();
     }
  
     public PdfPrototype() {
