@@ -14,5 +14,12 @@ public abstract class Vetor {
 			list.add(rand.nextInt());
 		}
 	}
+	public void setLista(List<Integer> lista) {
+		 list = lista;
+	}
+	public List<Integer> getLista() {
+		return list;
+	}
+	
 	public abstract void percorrerLista();
 }

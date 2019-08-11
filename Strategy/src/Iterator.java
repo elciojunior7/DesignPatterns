@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Iterator {
 	public static final int ASC = 1;
@@ -23,6 +24,12 @@ public class Iterator {
 	
 	public void geraLista() {
 		metodoDeIteracao.gerarLista();
+	}
+	public void setLista(List<Integer> lista) {
+		metodoDeIteracao.setLista(lista);
+	}
+	public List<Integer> getLista() {
+		return metodoDeIteracao.getLista();
 	}
 	
 	public void percorreLista() {

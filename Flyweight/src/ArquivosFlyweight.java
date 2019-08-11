@@ -1,4 +1,4 @@
 
 public abstract class ArquivosFlyweight {
-	public abstract void getArquivo(Arquivo file);
+	public abstract void moverArquivo(String serverPath);
 }

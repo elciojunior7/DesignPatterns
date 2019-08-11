@@ -8,9 +8,9 @@ public class Main {
 		iterador.percorreLista();
 		
 		System.out.println("\n DESC");
-		iterador = new Iterator(Iterator.DESC);
-		iterador.geraLista();
-		iterador.percorreLista();
+		Iterator outroIterador = new Iterator(Iterator.DESC);
+		outroIterador.setLista(iterador.getLista());
+		outroIterador.percorreLista();
 	}
 
 }

@@ -7,9 +7,10 @@ public class BurguerDecorado extends BurguerDecorator {
  
 	@Override
 	public void prepare() {
+		burguerDecorado.prepare();
     	this.bacon();
     	this.catupiry();
-    	burguerDecorado.prepare();
+    	this.salada();
     }
  
     
@@ -18,5 +19,8 @@ public class BurguerDecorado extends BurguerDecorator {
 	}
 	public void catupiry() {
 		System.out.println("Adicionando catupiry");
+	}
+	public void salada() {
+		System.out.println("Adicionando salada");
 	}
 }

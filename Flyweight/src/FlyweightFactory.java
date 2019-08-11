@@ -5,25 +5,22 @@ public class FlyweightFactory {
  
     public FlyweightFactory() {
         flyweights = new ArrayList<ArquivosFlyweight>();
-        flyweights.add(new Arquivo("Teste", "pdf", "48MB", "c:/teste"));
-        flyweights.add(new Arquivo("Teste", "pdf", "48MB", "c:/teste"));
-        flyweights.add(new Arquivo("Teste", "pdf", "48MB", "c:/teste"));
+        flyweights.add(new ArquivoConcrete("2017", "pdf"));
+        flyweights.add(new ArquivoConcrete("2018", "pdf"));
+        flyweights.add(new ArquivoConcrete("2019", "pdf"));
+        flyweights.add(new ArquivoConcrete("Fiscal", "xlsx"));
     }
  
-    public SpriteFlyweight getFlyweight(Sprites jogador) {
-        switch (jogador) {
-        case JOGADOR:
+    public ArquivosFlyweight getFlyweight(Files file) {
+        switch (file) {
+        case PDF_2017:
             return flyweights.get(0);
-        case INIMIGO_1:
+        case PDF_2018:
             return flyweights.get(1);
-        case INIMIGO_2:
+        case PDF_2019:
             return flyweights.get(2);
-        case INIMIGO_3:
-            return flyweights.get(3);
-        case CENARIO_1:
-            return flyweights.get(4);
         default:
-            return flyweights.get(5);
+            return flyweights.get(3);
         }
     }
 }

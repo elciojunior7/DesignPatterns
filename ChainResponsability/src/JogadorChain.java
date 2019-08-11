@@ -8,11 +8,11 @@ public abstract class JogadorChain {
         identificadorDoJogador = id;
     }
  
-    public void setNext(JogadorChain forma) {
+    public void setNext(JogadorChain proxJog) {
         if (next == null) {
-            next = forma;
+            next = proxJog;
         } else {
-            next.setNext(forma);
+            next.setNext(proxJog);
         }
     }
     

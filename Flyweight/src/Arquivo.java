@@ -1,12 +1,15 @@
 
 public class Arquivo {
-	
-	public String nome, formato, tamanho;
+
+	public String nome, formato;
 	 
-    public Arquivo(String nome, String formato, String tamanho) {
+    public Arquivo(String nome, String formato) {
     	this.nome = nome;
     	this.formato = formato;
-        this.tamanho = tamanho;
     }
-
+ 
+    public void mostrarArquivo() {
+        System.out.println(nome+"."+formato);
+    }
+	
 }
